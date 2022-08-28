@@ -1,0 +1,44 @@
+// Fonts Sizes
+$font-size-body: var(--font-size-body);
+$font-size-h1: var(--font-size-h1);
+$font-size-h2: var(--font-size-h2);
+$font-size-h3: var(--font-size-h3);
+$font-size-h4: var(--font-size-h4);
+$font-size-h5: var(--font-size-h5);
+$font-size-h6: var(--font-size-h6);
+$font-size-p: var(--font-size-p);
+$font-size-a: var(--font-size-a);
+
+// Theme Accent
+
+$theme-color-primary: var(--primary-color__theme);
+$theme-color-secondary: var(--secondary-color__theme);
+
+// Text/ Headings Colors, Family
+
+$font-primary: 'GT-Ultra', 'Helvetica', sans-serif;
+$font-secondary: 'Helvetica', sans-serif;
+
+$font-color-primary:var(--primary-color__text);
+$font-color-secondary:var(--secondary-color__text);
+
+$btn-color-primary-default:var(--primary-color__btn-default);
+$btn-bgcolor-primary-default:var(--primary-background-color__btn-default);
+$btn-color-primary-hover:var(--primary-color__btn-hover);
+$btn-bgcolor-secondary-hover:var(--primary-background-color__btn-hover);
+
+$btn-color-secondary-default:var(--secondary-color__btn-default);
+$btn-bgcolor-secondary-default:var(--secondary-background-color__btn-default);
+$btn-color-secondary-hover:var(--secondary-color__btn-hover);
+$btn-bgcolor-secondary-hover:var(--secondary-background-color__btn-hover);
+
+
+// Others
+
+$animate-duration: .25s;
+$animate-delay: 1s;
+$section-padding-top:var(--section_desktop_padding_top);
+$section-padding-bottom:var(--section_desktop_padding_bottom);
+$section-padding-left:var(--section_desktop_padding_left);
+$section-padding-right:var(--section_desktop_padding_right);
+$container-max-width: var(--container_max_width);

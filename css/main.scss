@@ -1,0 +1,28 @@
+@import './scss/variables';
+@import './scss/mixin'; 
+@import './scss/themesettings';
+@import './scss/container';
+@import './scss/loader';
+@import './scss/button';
+@import './scss/text';
+@import './scss/background';
+@import './scss/404';
+@import './scss/misc';
+@import './scss/flex';
+@import './scss/spacings';
+@import './scss/style';
+
+
+@import './scss/media_queries/min-1024px'; 
+@import './scss/media_queries/min-992px'; 
+@import './scss/media_queries/max-1366px'; 
+@import './scss/media_queries/max-1024px'; 
+@import './scss/media_queries/max-991px'; 
+@import './scss/media_queries/max-768px'; 
+@import './scss/media_queries/max-767px'; 
+@import './scss/media_queries/max-667px'; 
+@import './scss/media_queries/max-480px'; 
+@import './scss/media_queries/max-420px'; 
+@import './scss/media_queries/max-380px'; 
+@import './scss/media_queries/max-320px'; 
+

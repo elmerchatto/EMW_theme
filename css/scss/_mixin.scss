@@ -1,0 +1,20 @@
+@mixin dp--flex__only {
+    display:flex;
+    display:-ms-flexbox;
+    display:-webkit-flex;
+}
+
+@mixin dp--flex__complete {
+    display:flex;
+    display:-ms-flexbox;
+    display:-webkit-flex;
+    flex-wrap:wrap;
+    align-items: center;
+}
+
+@mixin animate--transition {
+    transition:0.25s ease;
+    -ms-transition:0.25s ease;
+    -webkit-transition:0.25s ease;
+    -moz-transition:0.25s ease;
+}

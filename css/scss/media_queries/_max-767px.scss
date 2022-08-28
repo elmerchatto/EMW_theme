@@ -1,0 +1,8 @@
+@media screen and (max-width:767px) {
+    section.section {
+        padding-top: var(--section_mobile_padding_top);
+        padding-bottom: var(--section_mobile_padding_bottom);
+        padding-left: var(--section_mobile_padding_left);
+        padding-right: var(--section_mobile_padding_right);
+    }
+}

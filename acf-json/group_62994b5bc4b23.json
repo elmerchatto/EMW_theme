@@ -1,0 +1,66 @@
+{
+	"key": "group_62994b5bc4b23",
+	"title": "Page Builder",
+	"fields": [
+		{
+			"key": "field_62994b66d4533",
+			"label": "Layouts",
+			"name": "layouts",
+			"type": "flexible_content",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"layouts": {
+				"layout_62994b71ec1c0": {
+					"key": "layout_62994b71ec1c0",
+					"name": "",
+					"label": "",
+					"display": "block",
+					"sub_fields": [],
+					"min": "",
+					"max": ""
+				}
+			},
+			"button_label": "Add Row",
+			"min": "",
+			"max": ""
+		}
+	],
+	"location": [
+		[
+			{
+				"param": "post_type",
+				"operator": "==",
+				"value": "post"
+			}
+		]
+	],
+	"menu_order": 0,
+	"position": "normal",
+	"style": "default",
+	"label_placement": "top",
+	"instruction_placement": "label",
+	"hide_on_screen": [
+		"permalink",
+		"the_content",
+		"excerpt",
+		"discussion",
+		"comments",
+		"revisions",
+		"slug",
+		"author",
+		"format",
+		"categories",
+		"tags",
+		"send-trackbacks"
+	],
+	"active": true,
+	"description": "",
+	"show_in_rest": 0,
+	"modified": 1654213546
+}

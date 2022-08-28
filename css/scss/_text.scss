@@ -1,0 +1,37 @@
+
+/* Text */
+
+.text-color--primary {
+  color: $font-color-primary;
+}
+
+.text-color--secondary {
+  color: $font-color-secondary;
+}
+
+.text--center {
+  text-align:center;
+}
+
+.text--left {
+  text-align:left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* Colors */
+
+.text--white h1,
+.text--white h2,
+.text--white h3,
+.text--white h4,
+.text--white h5,
+.text--white h6,
+.text--white p,
+.text--white a,
+.text--white span,
+.text--white li {
+  color:#fff;
+}

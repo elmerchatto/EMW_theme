@@ -1,0 +1,67 @@
+:root {
+  --emw-color-primary: #007cba;
+}
+
+input[type=color], 
+input[type=date], 
+input[type=datetime-local], 
+input[type=datetime], 
+input[type=email], 
+input[type=checkbox],
+input[type=month], 
+input[type=number], 
+input[type=password], 
+input[type=search], 
+input[type=tel], 
+input[type=text], 
+input[type=time], 
+input[type=url], 
+input[type=week], 
+select, 
+textarea,
+.page-title-action,
+.components-button.is-button,
+.wp-core-ui .button,
+.wp-core-ui select,
+.acf-button-group label:first-child,
+.acf-button-group label:last-child,
+#screen-meta-links .show-settings,
+.acf-link .link-wrap,
+.acf-switch,
+.acf-switch .acf-switch-slider {
+  border-radius: 0 !important;
+}
+
+#parent_id,
+#page_template,
+#menu_order,
+#post_name {
+  width: 100%;
+}
+
+#collapse-menu {
+  display: none;
+}
+
+#wp-admin-bar-user-info .avatar,
+.column-username img {
+  border-radius: 50% !important;
+}
+
+.emw-publish--button {
+  bottom: 10px;
+  box-shadow: unset !important;
+  padding: 0 60px !important;
+  position: fixed;
+  right: 10px;
+  z-index: 10;
+}
+
+.acf-input .layout {
+  border: 2px solid var(--emw-color-primary) !important;
+}
+
+.acf-flexible-content .layout .acf-fc-layout-order {
+  background-color: var(--emw-color-primary) !important;
+  color: #fff;
+}

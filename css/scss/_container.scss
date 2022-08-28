@@ -1,0 +1,13 @@
+@media screen and (min-width:1200px) {
+    .container {
+      max-width: $container-max-width;
+    }
+  }
+  
+@media screen and (min-width:1080px) {
+    .container {
+      padding-left: 70px;
+      padding-right: 70px;
+    }
+}
+  

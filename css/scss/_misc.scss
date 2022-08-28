@@ -1,0 +1,80 @@
+/* Miscellaneous */
+
+.visible--hidden {
+  visibility: hidden;
+}
+
+ .visible--display {
+   visibility: visible;
+ }
+
+ .dp--none {
+ display: none;
+ }
+
+ .dp--block {
+  display: block;
+  } 
+
+ .overflow--hidden {
+  overflow:hidden;
+ } 
+
+ .relative__ {
+  position:relative;
+ }
+ 
+ .absolute__ {
+  position:absolute;
+ }
+
+ /* Animations */
+
+.fadeInUp {
+  transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(5px);
+    -ms-transform: translateY(5px);
+    transform: translateY(5px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}

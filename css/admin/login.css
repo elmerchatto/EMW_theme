@@ -1,0 +1,16 @@
+.login {
+  align-items: center;
+  display: grid;
+  height: 100vh;
+  justify-items: center;
+  width: 100vw;
+}
+
+.login h1,
+#backtoblog {
+  display: none;
+}
+
+#nav {
+  text-align: center;
+}
