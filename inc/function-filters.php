@@ -2,7 +2,7 @@
 
 /**
  * @author  Elmer Chatto
- * @link httpss://iamelmerchatto.com/
+ * @link https://iamelmerchatto.com/
  * @version 1.1
  */
 /**
