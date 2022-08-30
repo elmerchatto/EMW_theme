@@ -16,8 +16,8 @@ $theme-color-secondary: var(--secondary-color__theme);
 
 // Text/ Headings Colors, Family
 
-$font-primary: 'GT-Ultra', 'Helvetica', sans-serif;
-$font-secondary: 'Helvetica', sans-serif;
+$font-primary: 'Open Sans', sans-serif;
+$font-secondary: 'Inter', sans-serif;
 
 $font-color-primary:var(--primary-color__text);
 $font-color-secondary:var(--secondary-color__text);
@@ -25,7 +25,7 @@ $font-color-secondary:var(--secondary-color__text);
 $btn-color-primary-default:var(--primary-color__btn-default);
 $btn-bgcolor-primary-default:var(--primary-background-color__btn-default);
 $btn-color-primary-hover:var(--primary-color__btn-hover);
-$btn-bgcolor-secondary-hover:var(--primary-background-color__btn-hover);
+$btn-bgcolor-primary-hover:var(--primary-background-color__btn-hover);
 
 $btn-color-secondary-default:var(--secondary-color__btn-default);
 $btn-bgcolor-secondary-default:var(--secondary-background-color__btn-default);
