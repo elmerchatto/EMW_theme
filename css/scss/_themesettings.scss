@@ -69,36 +69,51 @@ a {
  }
  
  .theme--btn__primary--default {
-   color:var(--primary-color__btn-default);
+ 
+  a {
+
+   color:$btn-color-primary-default;
    background:$btn-bgcolor-primary-default;
+   border:1px solid $btn-bgcolor-primary-default;
 
    &:hover {
-    color:$btn-color-primary-hover;
-    background:$btn-bgcolor-secondary-hover;
-   }
+     color:$btn-color-primary-hover;
+     background:$btn-bgcolor-primary-hover;
+     border-color:$btn-color-primary-hover;
+    }
 
-   &:active {
-    color:$btn-color-primary-hover;
-    background:$btn-bgcolor-secondary-hover;
-   }
- }
+    &:active {
+     color:$btn-color-primary-hover;
+     background:$btn-bgcolor-primary-hover;
+     border-color:$btn-color-primary-hover;
+    } 
 
-
- .theme--btn__secondary--default {
-    color:$btn-color-secondary-default;
-    background:$btn-bgcolor-secondary-default;
-
-    &:hover {
-      color:$btn-color-secondary-hover;
-      background:$btn-bgcolor-secondary-hover;
-     }
-  
-     &:active {
-      color:$btn-color-primary-hover;
-      background:$btn-bgcolor-secondary-hover;
-     }
   }
+
+}
+
+.theme--btn__secondary--default {
+
+   a {
+     color:$btn-color-secondary-default;
+     background:$btn-bgcolor-secondary-default;
+     border:1px solid $btn-bgcolor-secondary-default;
+
+     &:hover {
+       color:$btn-color-secondary-hover;
+       background:$btn-bgcolor-secondary-hover;
+       border-color:$btn-color-secondary-hover;
+      }
+   
+      &:active {
+       color:$btn-color-secondary-hover;
+       background:$btn-bgcolor-secondary-hover;
+       border-color:$btn-color-secondary-hover;
+      }
+
+   }
  
+ }
 section.section {
     padding-top: $section-padding-top;
     padding-bottom: $section-padding-bottom;
