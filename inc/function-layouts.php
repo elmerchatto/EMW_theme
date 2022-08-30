@@ -25,5 +25,5 @@ defined( 'ABSPATH' ) || exit;
  * e.g home_slider callback
  */
 function emw_home_slider() {
-  // get_template_part( '' );
+  // get_template_part( 'template-parts/' );
 }
