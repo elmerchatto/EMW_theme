@@ -4,6 +4,21 @@
     display:-webkit-flex;
 }
 
+@mixin dp--flex__wrap {
+    display:flex;
+    display:-ms-flexbox;
+    display:-webkit-flex;
+    flex-wrap: wrap;
+}
+
+@mixin dp--flex__align-center {
+    display:flex;
+    display:-ms-flexbox;
+    display:-webkit-flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
 @mixin dp--flex__complete {
     display:flex;
     display:-ms-flexbox;

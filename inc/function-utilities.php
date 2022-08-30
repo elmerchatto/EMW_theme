@@ -64,6 +64,32 @@ function emw_the_section_id() {
   }
 }
 
+
+/**
+ * Images from ACF
+ */
+function emw_img_acf( $field_name, $type='default', $size = NULL ) {
+  
+  $img_get = $type =='default' ? get_field($field_name) : get_field($field_name,'option');
+
+  $url = '';
+  $alt = '';
+
+  if( !empty($img_get) ) {
+      $url = !empty($size) ? $img_get['sizes'][$size] : $img_get['url']; 
+      $alt = $img_get['alt']; 
+  }
+  else {
+      $img_get_sub = get_sub_field($field_name); 
+      $url = !empty($size) ? $img_get_sub['sizes'][$size] : $img_get_sub['url']; 
+      $alt = $img_get_sub['alt'];
+  }
+
+  echo '<img src="' .$url. '" alt="' .$alt. '">';
+
+}
+
+
 /**
  * Images URI
  */

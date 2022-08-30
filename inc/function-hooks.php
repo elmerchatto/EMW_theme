@@ -210,13 +210,13 @@ function emw_register_theme_settings(){
 
     --primary-color__btn-default: <?php echo $theme_primary_btn['default']['color']; ?>;
     --primary-color__btn-hover: <?php echo $theme_primary_btn['hover_active']['color']; ?>;
-    --primary-background-color__btn-default: <?php echo $theme_primary_btn['default']['color']; ?>;
-    --primary-background-color__btn-hover: <?php echo $theme_primary_btn['hover_active']['color']; ?>;
+    --primary-background-color__btn-default: <?php echo $theme_primary_btn['default']['background_color']; ?>;
+    --primary-background-color__btn-hover: <?php echo $theme_primary_btn['hover_active']['background_color']; ?>;
 
     --secondary-color__btn-default: <?php echo $theme_secondary_btn['default']['color']; ?>;
-    --secondary-color__btn-hover: <?php echo $theme_secondary_btn['hover_active']['color']; ?>;
+    --secondary-color__btn-hover: <?php echo $theme_secondary_btn['hover_active']['background_color']; ?>;
     --secondary-background-color__btn-default: <?php echo $theme_secondary_btn['default']['color']; ?>;
-    --secondary-background-color__btn-hover: <?php echo $theme_secondary_btn['hover_active']['color']; ?>;
+    --secondary-background-color__btn-hover: <?php echo $theme_secondary_btn['hover_active']['background_color']; ?>;
 
     --container_max_width: <?php echo $theme_html_elements['container_max_width']; ?>;
 

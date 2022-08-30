@@ -28,6 +28,27 @@
   position:absolute;
  }
 
+ .nav {
+  align-items: center;
+
+  ul {
+    @include dp--flex__align-center;
+    margin:0px;
+    padding:0px;
+
+    li {
+      list-style-type:none;
+      margin-right:2.2em;
+
+      a {
+        color:$font-color-primary;
+        text-decoration:none;
+      }
+    }
+  }
+  
+ }
+
  /* Animations */
 
 .fadeInUp {

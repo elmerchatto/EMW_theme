@@ -1,5 +1,5 @@
 :root {
-  --emw-color-primary: #007cba;
+  --lnx-color-primary: #007cba;
 }
 
 input[type=color], 
@@ -48,7 +48,7 @@ textarea,
   border-radius: 50% !important;
 }
 
-.emw-publish--button {
+.lnx-publish--button {
   bottom: 10px;
   box-shadow: unset !important;
   padding: 0 60px !important;
@@ -58,10 +58,10 @@ textarea,
 }
 
 .acf-input .layout {
-  border: 2px solid var(--emw-color-primary) !important;
+  border: 2px solid var(--lnx-color-primary) !important;
 }
 
 .acf-flexible-content .layout .acf-fc-layout-order {
-  background-color: var(--emw-color-primary) !important;
+  background-color: var(--lnx-color-primary) !important;
   color: #fff;
 }
