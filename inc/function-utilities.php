@@ -91,6 +91,32 @@ function emw_img_acf( $field_name, $type='default', $size = NULL ) {
 
 
 /**
+ * Button from ACF
+ */
+
+function emw_btn_acf($field_name){
+
+  $btn_get = get_field($field_name);
+  $url = '';
+  $text = '';
+
+  if( !empty($btn_get) ) {
+      $url = $btn_get['url']; 
+      $text = $btn_get['title']; 
+  }
+  else {
+      $btn_get_sub = get_sub_field($field_name); 
+      $url = $btn_get_sub['url']; 
+      $text = $btn_get_sub['title'];
+  }
+
+  echo '<a href="' .$url. '" class="btn--global">' .$text. '</a>';
+
+}
+
+
+
+/**
  * Images URI
  */
 function emw_the_image_url( $filename ) {
