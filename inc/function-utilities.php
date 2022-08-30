@@ -59,9 +59,38 @@ function emw_the_section_class() {
  * Get section custom CSS ID 
  */
 function emw_the_section_id() { 
-  if ( get_sub_field( 'id' ) ) {
-    the_sub_field( 'id' );
+  if ( !empty(get_sub_field( 'custom_id' )) ) {
+    echo 'id='.get_sub_field('custom_id').'';
   }
+}
+
+
+/**
+ * Images Background from ACF
+ */
+function emw_bg_img_acf( $field_name='example', $type='default' ) {
+
+  $img_get = $type =='default' ? get_field($field_name) : get_field($field_name,'option');
+
+  $url = '';
+  $alt = '';
+
+  if( !empty( $img_get ) ) {
+      $url = $img_get['url']; 
+
+  }
+  else {
+      $img_get_sub = get_sub_field( $field_name ); 
+      $url = !empty($img_get_sub['url']) ? $img_get_sub['url'] : ''; 
+  } 
+
+  if($url) {
+    echo 'background-image:url('.$url.');';
+  }
+  else {
+    return false;
+  } 
+  
 }
 
 
@@ -94,7 +123,7 @@ function emw_img_acf( $field_name, $type='default', $size = NULL ) {
  * Button from ACF
  */
 
-function lnx_btn_acf($field_name){
+function emw_btn_acf($field_name){
 
   $btn_get = get_field($field_name);
   $url = '';
