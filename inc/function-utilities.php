@@ -114,7 +114,14 @@ function emw_img_acf( $field_name, $type='default', $size = NULL ) {
       $alt = $img_get_sub['alt'];
   }
 
-  echo '<img src="' .$url. '" alt="' .$alt. '">';
+  if( !empty( $url ) ) {
+    ?>
+      <img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>">
+ 
+   <?php 
+   } else {
+     echo '<p>Please insert Image</p>';
+   }
 
 }
 
