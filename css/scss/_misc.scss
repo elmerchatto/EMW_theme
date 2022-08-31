@@ -28,6 +28,21 @@
   position:absolute;
  }
 
+ .img--width__full {
+    
+    img {
+      width:100%;
+    }
+ } 
+
+ input {
+  &:hover,
+  &:active,
+  &:focus {
+    outline:none;
+  }
+ }
+
  .nav {
   align-items: center;
 
