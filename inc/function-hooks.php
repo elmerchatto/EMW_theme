@@ -226,7 +226,7 @@ function emw_register_theme_settings(){
     --container_max_width: <?php echo $theme_html_elements['container_max_width']; ?>;
 
     --section_desktop_padding_top: <?php echo $section_padding_desktop['top']; ?>;
-    --section_desktop_padding_bottom <?php echo $section_padding_desktop['bottom']; ?>;
+    --section_desktop_padding_bottom: <?php echo $section_padding_desktop['bottom']; ?>;
     --section_desktop_padding_left: <?php echo $section_padding_desktop['left']; ?>;
     --section_desktop_padding_right: <?php echo $section_padding_desktop['right']; ?>;
 

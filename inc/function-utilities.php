@@ -19,6 +19,16 @@ defined( 'ABSPATH' ) || exit;
  */
 
 
+  /**
+ * Include
+ */
+
+function emw_snippet($filename){
+
+  include( EMW_IMG_SNIPPET.'/'.$filename. '.php' );
+
+ }
+
 /**
  * Buffer start
  */
@@ -124,6 +134,52 @@ function emw_img_acf( $field_name, $type='default', $size = NULL ) {
    }
 
 }
+
+
+
+/**
+ * Multiple Images from ACF
+ */
+function emw_gallery_acf( $field_name, $type='default', $size = NULL ) {
+  
+  $imgs_get = $type =='default' ? get_field($field_name) : get_field($field_name,'option');
+
+  $url = array();
+  $alt = array();
+
+  
+
+  if( !empty( $imgs_get ) ) {
+     
+    foreach($imgs_get as $img_get) {
+      array_push($url, $img_get['url']);
+      array_push($alt, $img_get['url']);
+    }
+  }
+  else {
+      $img_get_sub = get_sub_field( $field_name ); 
+
+      foreach($img_get_sub as $img_get) {
+        array_push($url, $img_get['url']);
+        array_push($alt, $img_get['url']);
+      }
+  } 
+  $count = 1;
+  if(!empty($url)) {
+    foreach($url as $img_link) {
+      ?>
+    <div class="gallery--image__each gallery--image__each-<?php echo $count++; ?>">
+      <div class="gallery--image__each--inner">
+        <img src="<?php echo $img_link; ?>" alt="<?php echo $alt; ?>">
+      </div>
+    </div>
+      <?php
+    }
+  } else {
+    echo '<p>Insert Image</p>';
+  }
+}
+
 
 
 /**

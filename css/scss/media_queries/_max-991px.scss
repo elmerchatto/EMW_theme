@@ -1,3 +1,44 @@
 @media screen and (max-width:991px) {
-    
-}
+
+    // For Snippets only
+    .large--screens {
+        display: none;
+    }
+
+    .small--screens {
+        display: block;
+    }
+
+    header {
+        .hamburger--line {
+            @include animate--transition;
+        }
+        
+        &.active-menu {
+
+            .hamburger--toggle {
+
+                .hamburger--line {
+                    @include animate--transition;
+
+                    &.hamburger--line__1 {
+                        top:7px;
+                        transform: rotate(45deg);
+                        -ms-transform: rotate(45deg);
+                        -webkit-transform: rotate(45deg);
+                    }
+                    &.hamburger--line__2 {
+                        opacity: 0;
+                    }
+                    &.hamburger--line__3 {
+                        top:7px;
+                        transform: rotate(-45deg);
+                        -ms-transform: rotate(-45deg);
+                        -webkit-transform: rotate(-45deg);
+                    }
+                }
+            }
+        }
+    }
+
+    // End for Snippets

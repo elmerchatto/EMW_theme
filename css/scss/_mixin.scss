@@ -57,3 +57,21 @@
     -webkit-transition:0.25s ease;
     -moz-transition:0.25s ease;
 }
+
+@mixin animate--beazier__ease-in {
+    transition:.6s cubic-bezier(.4,0,.2,1);
+    -ms-transition:.6s cubic-bezier(.4,0,.2,1);
+    -webkit-transition:.6s cubic-bezier(.4,0,.2,1);
+    -moz-transition:.6s cubic-bezier(.4,0,.2,1);
+    // transition-duration: .6s;
+    // transition-timing-function: cubic-bezier(.4,0,.2,1);
+}
+
+@mixin animate--beazier__ease-out {
+    transition:.6s cubic-bezier(.4,0,.2,1);
+    -ms-transition:.6s cubic-bezier(.4,0,.2,1);
+    -webkit-transition:.6s cubic-bezier(.4,0,.2,1);
+    -moz-transition:.6 cubic-bezier(.4,0,.2,1);
+    // transition-duration: .6s;
+    // transition-timing-function: cubic-bezier(.4,0,.2,1);
+}

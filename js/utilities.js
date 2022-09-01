@@ -1,4 +1,18 @@
-let smooth_scroll = new SmoothScroll();
+     /**
+     * Hamburger
+     */
+
+      function hamburger_menu_snippet(){
+
+        let hamburger = $('.hamburger--toggle');
+        
+          hamburger.on('click',function(){
+              $('header').toggleClass('active-menu');
+          });
+  
+       }
+  
+       hamburger_menu_snippet();
 
     /**
      * JSON parser
