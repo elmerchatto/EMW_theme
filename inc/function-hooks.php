@@ -87,12 +87,13 @@ function enqueue_scripts__() {
   endif;
 
   if(@get_field( 'scroll_magic','option' )) :
-
+    
+    wp_enqueue_script('timelinelite-js', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js');
     wp_enqueue_script( 'scroll-magic-js', 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js', array('jquery'), '1.0', true  );
-    wp_enqueue_script( 'scroll-magic-timelinelite-js', 'http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js', array('jquery'), '1.0', true  );
     wp_enqueue_script( 'scroll-magic-tweenmax-js',  get_template_directory_uri(). '/js/ext/tweenmax.js', array('jquery'), '1.0', true  );
     wp_enqueue_script( 'scroll-magic-gsap-animation-js', 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js', array('jquery'), '1.0', true  );
     wp_enqueue_script( 'scroll-magic-indicators-js', 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js', array('jquery'), '1.0', true  );
+    
 
   endif; 
 
