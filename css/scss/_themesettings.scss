@@ -114,12 +114,18 @@ a {
    }
  
  }
-section.section {
+section {
+
+  &.section {
     padding-top: $section-padding-top;
     padding-bottom: $section-padding-bottom;
     padding-left: $section-padding-left;
     padding-right: $section-padding-right;
+  }
+
 }
+
+
 
  
  /* End Settings */
