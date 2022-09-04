@@ -9,9 +9,6 @@
                 </div>
                 <nav class="nav">
                     <?php echo wp_nav_menu( array('theme_location' => 'main-menu','fallback_cb' => false ) );  ?>
-                    <div class="contact-us--btn">
-                        <a href="#" class="btn--global theme--btn__primary--default">CONTACT US</a>
-                    </div>
                 </nav>
             </div>
         </div>
