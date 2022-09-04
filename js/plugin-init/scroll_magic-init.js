@@ -126,3 +126,51 @@ function emw_scrollmagic($args) {
 }
 
 
+
+
+/**
+ * Options emw_scrollmagic_ping
+ * 
+ * @pinTo : html element to Pin  --REQUIRED--
+ * @trigger : element to start animate --REQUIRED--
+ * @triggerHook : default 0
+ * @pushFollowers : default true
+ * @duration : default trigger element height, to set use 1% to 100%
+ *
+ * Options Example below
+ * 
+ * lnx_scrollmagic_pin({
+ *           trigger: '.class-to-trigger',
+ *           pinTo:'.class-to-pin',
+ *           triggerHook: 0.1,
+ *           pushFollowers: true,
+ *           duration: '100%'
+ *      });
+ * 
+ */
+
+ function emw_scrollmagic_pin($args) {
+
+    let pinTo = $args.pinTo != null ? $args.pinTo : false;
+    let trigger = $args.trigger != null ? $args.trigger : false;
+    let triggerHook = $args.triggerHook != null ? $args.triggerHook : 1;
+    let pushFollowers = $args.pushFollowers != null ? $args.pushFollowers : true;
+    let duration = $args.duration != null ? $args.duration : $(trigger).outerHeight();
+
+    $(trigger).each(function(){
+
+        let $this = $(this);
+        let timeline = new TimelineMax();
+
+        let scrollMagicPin = new ScrollMagic.Scene({
+                triggerElement: trigger,
+                triggerHook: triggerHook,
+                duration: '100%'
+            });   
+
+            scrollMagicPin.addIndicators().setPin(pinTo, { pushFollowers: pushFollowers }).addTo(controller);  
+
+    });
+}
+
+
